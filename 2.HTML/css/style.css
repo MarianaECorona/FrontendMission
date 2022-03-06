@@ -136,4 +136,83 @@ ul.slider li:target {
   font-size: 20px;
   border-radius: 100%;
 }
+label {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: 1em;
+}
+p{
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: 1em;
+}
+input[type=text] {
+    
+    display: block;
+    margin:auto;
+    padding: 12px 20px;
+    width: 40%;
+}
 
+input[type=email] {
+    
+    display: block;
+    margin:auto;
+    padding: 12px 20px;
+    width: 40%;
+}
+
+input[type=tel] {
+    
+    display: block;
+    margin:auto;
+    padding: 12px 20px;
+    width: 40%;
+}
+
+input[type=number] {
+    
+    display: block;
+    margin:auto;
+    padding: 12px 20px;
+    width: 40%;
+}
+
+select{
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    width: 40%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+    
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+  input[type=submit] {
+    background-color: #f3144f;
+    float: right;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width:20%;
+  }
