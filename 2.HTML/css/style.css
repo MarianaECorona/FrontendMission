@@ -65,6 +65,11 @@ header .navbar ul li:hover > ul{
     display: initial;
 }
 
+h1 {
+    margin-top: 120px;
+    text-align: center;
+    color: black;
+}
 .conteiner{
     margin:auto;
     background-color: white;
