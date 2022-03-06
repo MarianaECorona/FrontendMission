@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!--Estilo-->
     <link rel="stylesheet" href="css/style.css">
     <title>PinkPlanet</title>
@@ -15,11 +17,10 @@
         <nav class="navbar"> 
             <ul> 
                 <li><a href="#home">Inicio</a></li>
-                <li><a href="#">Pasteles +</a>
+                <li><a href="#cake">Pasteles +</a>
                     <ul>
-                        <li><a href="#">Tradicionales</a></li>
+                        <li><a href="#classic">Tradicionales</a></li>
                         <li><a href="#">Fondan</a></li>
-                        <li><a href="#">Tres Leches</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Tematicos</a></li>
@@ -45,20 +46,122 @@
         </ul>
 
         <ul class="menu">
-            <p>aqui</p>
-            <li>
-                <a href="#slide1">1</a>
-            </li>
-            
-            <li>
-                <a href="#slide2">2</a>
-            </li>
-            
-            <li>
-                <a href="#slide3">3</a>
-            </li>
+            <li> <a href="#slide1">1</a></li>
+            <li><a href="#slide2">2</a></li>
+            <li><a href="#slide3">3</a></li>
         </ul>
     </div>
+
+    <!--Pasteles-->
+    <a name="cake"></a><h1>Pasteles</h1>
+    <a name="classic"></a><h2>Tradicionales</h2>
+
+    <!--Card Slider Tradicionales-->
+    <section>
+        <div class="card">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                    <div class="swiper-slide card">
+                        <div class="cardSlide">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./assets/img/CardSlider/Tradicional/red-velvet.jpg" alt="red Velvet"/>
+                                </div>
+                                <div class="cake-data">
+                                    <span class="name">Red Velvet</span>
+                                    <span class="price">$123.00</span>
+                                </div>
+                                <div class="button">
+                                    <button class="buy">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="cardSlide">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./assets/img/CardSlider/Tradicional/red-velvet.jpg" alt="red Velvet"/>
+                                </div>
+                                <div class="cake-data">
+                                    <span class="name">Red Velvet</span>
+                                    <span class="price">$123.00</span>
+                                </div>
+                                <div class="button">
+                                    <button class="buy">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="cardSlide">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./assets/img/CardSlider/Tradicional/red-velvet.jpg" alt="red Velvet"/>
+                                </div>
+                                <div class="cake-data">
+                                    <span class="name">Red Velvet</span>
+                                    <span class="price">$123.00</span>
+                                </div>
+                                <div class="button">
+                                    <button class="buy">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="cardSlide">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./assets/img/CardSlider/Tradicional/red-velvet.jpg" alt="red Velvet"/>
+                                </div>
+                                <div class="cake-data">
+                                    <span class="name">Red Velvet</span>
+                                    <span class="price">$123.00</span>
+                                </div>
+                                <div class="button">
+                                    <button class="buy">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+        
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+  
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    </section>
+
+    <a name="classic"></a><h2>Fondan</h2>
 
 </body>
 </html>
